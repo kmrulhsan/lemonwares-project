@@ -1,4 +1,7 @@
 
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,500;1,600;1,700;1,800;1,900&display=swap');
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 body {
   font-family: 'Inter', sans-serif;
@@ -14,4 +17,20 @@ li{
 a{
   text-decoration: none;
   color: inherit;
+}
+#herotext{
+  font-family: 'poppins';
+  color: #2E2E2E;
+  font-size: 64px;
+  font-weight: 700;
+}
+#heropara{
+  letter-spacing: 2px;
+  color: #808080;
+}
+#createbtn{
+  background: #B00000;
+
+  box-shadow: 0px 0px 64px 0px #B000004D;
+
 }
