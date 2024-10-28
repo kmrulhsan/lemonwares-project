@@ -46,7 +46,9 @@ h1{
   padding: 6px;
 }
 
-
+.cardpara{
+  font-size: 12px;
+}
 /* toogle switch css */
 .switch {
   position: relative;
