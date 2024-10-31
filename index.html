@@ -11,7 +11,7 @@
 <body>
     <!-- nav bar start -->
      <section class="container-fluid">
-        <nav class="navbar navbar-expand-lg ">
+        <nav class="navbar navbar-expand-lg" id="navbar">
             <div class="container-fluid">
               <a class="navbar-brand mx-5 ms-0" href="#"><img src="asset/nav-logo.png" alt="Logo" width="90" height="60" srcset=""></a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll" aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
@@ -59,8 +59,53 @@
           <!-- left side hero section start -->
           <h1 class="lh-sm mb-4" id="herotext">Premium Web <br> Hosting for Your <br> Website</h1>
           <p class="lh-sm mb-5" id="heropara">Blazing fast web hosting for individuals and <br> businesses of all sizes backed by 24x7x365 Support.</p>
-          <button type="button" class="fw-light btn btn-danger py-2 px-3 rounded-3 " id="createbtn">Create an Account</button>
-          <button type="button" class=" fw-light btn btn-outline-dark py-2 px-3 rounded-3 mx-3">Choose your plan</button>
+          <button type="button" class="fw-light btn btn-danger py-2 px-3 rounded-3 " id="createbtn"  data-bs-toggle="modal" data-bs-target="#staticBackdrop">Create an Account</button>
+
+          <!-- Modal -->
+<div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="staticBackdropLabel">Create an Account</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        
+        <form>
+          <!-- Name input -->
+          <div  class="form-outline mb-4">
+            
+              <input type="text" id="name2" class="form-control" placeholder="Name" />
+              
+          </div>
+
+          <!-- Email input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+              <input type="email" id="email2" class="form-control" placeholder="Email Address" />
+          </div>
+
+          <!-- password input -->
+          <div data-mdb-input-init class="form-outline mb-4">
+              <input type="password" id="password2" class="form-control" placeholder="Password"/>   
+          </div>
+          <!-- Checkbox -->
+          <div class="form-check d-flex justify-content-start mb-4">
+            <input class="form-check-input me-2" type="checkbox" value="" id="checkbox3"  />
+            <label class="form-check-label" for="checkbox3">
+                I have read and agree to the terms
+            </label>
+        </div>
+      </form>
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Sign Up</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+          <a href="#planjump" class="fw-light btn btn-outline-dark py-2 px-3 rounded-3 mx-3">Choose your plan</a>
           <!-- left side hero section done -->
         </div>
 
@@ -112,7 +157,7 @@
      <!-- host section done -->
       <!-- plan section -->
       <section class="container-fluid my-5">
-        <h1 class="text-center fw-bolder">Ready to get started with <br>
+        <h1 class="text-center fw-bolder" id="planjump">Ready to get started with <br>
           Lemon Wares?</h1>
         <p class="text-center fs-4 fw-light my-4">Choose the package that suits you</p>
         <div class="row justify-content-center mb-5">
@@ -308,13 +353,17 @@
           </div>
         </div>
         <div class="row">
-          <p class="text-white m-5">Built by Kamrul with <i class="fa-solid fa-heart"></i> in Dhaka. Copyright 2024</p>
+          <div class="col-6 m-5">
+            <p class="text-white ps-4">Built by Kamrul with <i class="fa-solid fa-heart"></i> in Dhaka. Copyright 2024</p>
+          </div>
         </div>
       </section>
+      <!-- footer section end -->
       
 
 
      <script src="https://kit.fontawesome.com/e5564b3902.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+   
 </body>
 </html>
